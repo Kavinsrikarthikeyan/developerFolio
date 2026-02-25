@@ -12,7 +12,7 @@ export default function BlogCard({blog, isDark}) {
   }
 
   return (
-    <div onClick={() => openUrlInNewTab(blog.url, blog.title)}>
+    <div  onClick={() => openUrlInNewTab(blog.url, blog.title)}>
       <div className={isDark ? "blog-container dark-mode" : "blog-container"}>
         <a
           className={
@@ -31,6 +31,7 @@ export default function BlogCard({blog, isDark}) {
           </div>
         </a>
       </div>
+      
     </div>
   );
 }
